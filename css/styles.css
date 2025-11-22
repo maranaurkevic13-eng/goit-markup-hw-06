@@ -329,6 +329,17 @@ img {
     color: #404bbf;
 }
 
+.current {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .mobile-menu-address {
     font-style: normal;
     display: block;
@@ -358,6 +369,17 @@ img {
 
 .menu-contacts-link:focus {
     color: #404bbf;
+}
+
+.descr {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-icons-list {
@@ -906,6 +928,7 @@ img {
 }
 
 .footer-container {
+    justify-content: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -945,13 +968,7 @@ img {
     line-height: 1.5;
     color: #F4F4FD;
     letter-spacing: 0.02em
-}
-
-.social-container {
-    margin-left: 40px;
-    max-width: 208px;
-    height: 80px;
-}
+}     
 
 .social-text {
     margin-left: 56px;
@@ -1007,8 +1024,7 @@ img {
     height: 40px;
 }
 
-.email-container {
-    max-width: 288px;
+.email-container {       
     height: 136px;
     display: flex;
     flex-wrap: wrap;
@@ -1103,6 +1119,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
     .footer-container {
+        justify-content: flex-start;
         padding: 0 108px;
         flex-direction: row;
         flex-wrap: wrap;
@@ -1127,8 +1144,7 @@ img {
         margin-left: 0;
     }
 
-    .email-container {
-        max-width: 453px;
+    .email-container {    
         align-items: flex-start;
         margin-left: 0;
         height: 80px;
@@ -1142,6 +1158,10 @@ img {
     .email-form {
         flex-direction: row;
         gap: 24px;
+    }
+
+    .form-input:placeholder-shown {
+        width: 264px;
     }
 
     .footer-btn {
@@ -1187,10 +1207,9 @@ img {
         margin-left: 0;
     }
 
-    .email-container {
-        max-width: 453px;
+    .email-container {   
         height: 80px;
-        margin-left: auto;
+        margin-left: 80px;
     }
 
     .form-text {
@@ -1200,6 +1219,10 @@ img {
     .email-form {
         flex-direction: row;
         gap: 24px;
+    }
+
+    .form-input:placeholder-shown {
+        width: 264px;
     }
 
     .footer-btn {
@@ -1308,6 +1331,10 @@ img {
     margin-bottom: 8px;
 }
 
+.modal-container:first-child {
+    margin-bottom: 0;
+}
+
 .modal-text-label {
     display: block;
     margin-bottom: 4px;
@@ -1386,6 +1413,7 @@ input:focus+.email-icon {
     box-sizing: border-box;
     font-size: 12px;
     line-height: 1.17;
+    margin-bottom: 16px
 }
 
 .textarea:focus {
@@ -1426,6 +1454,7 @@ input:checked+label>.checkbox-window {
 }
 
 .checkbox-window {
+    flex-shrink: 0;
     margin-right: 8px;
     display: inline-flex;
     width: 16px;
