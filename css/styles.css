@@ -1412,8 +1412,7 @@ input:focus+.email-icon {
     width: 100%;
     box-sizing: border-box;
     font-size: 12px;
-    line-height: 1.17;
-    margin-bottom: 16px
+    line-height: 1.17; 
 }
 
 .textarea:focus {
@@ -1493,8 +1492,8 @@ input:checked+label>.checkbox-window {
     cursor: pointer;
     text-align: center;
     margin-top: 0;
-    margin-left: 60px;
-    margin-right: 59px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
